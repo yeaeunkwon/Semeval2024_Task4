@@ -1,1 +1,12 @@
-# Semeval2024_Task4
+# Semeval2024 Task4 :  Multilingual Detection of Persuasion Techniques in Memes 
+
+#### Task Description
+We refer to propaganda whenever information is purposefully shaped to foster a predetermined agenda. Propaganda uses psychological and rhetorical techniques to reach its purpose. Such techniques include the use of logical fallacies and appealing to the emotions of the audience. Logical fallacies are usually hard to spot since the argumentation, at first sight, might seem correct and objective. However, a careful analysis shows that the conclusion cannot be drawn from the premise without the misuse of logical rules. Another set of techniques makes use of emotional language to induce the audience to agree with the speaker only on the basis of the emotional bond that is being created, provoking the suspension of any rational analysis of the argumentation.
+Memes consist of an image superimposed with text. The role of the image in a deceptive meme is either to reinforce/complement a technique in the text or to convey itself one or more persuasion techniques.
+### TECHNICAL DESCRIPTION
+We defined the following subtasks:
+* Subtask 1 - Given only the “textual content” of a meme, identify which of the 20 persuasion techniques, organized in a hierarchy, it uses. If the ancestor node of a technique is selected, only a partial reward is given. This is a hierarchical multilabel classification problem. You can find a view of the hierarchy in the figure below (note that there are 22 techniques in the image, but in subtask 1 "Transfer" and ""Appeal to Strong emotion" are not present, so just picture the hierarchy without them). Full details on it are available here. If you need additional annotated data to solve this task, you can check the PTC corpus" as well as the SemEval 2023 task 3 data.
+* Subtask 2a - Given a meme, identify which of the 22 persuasion techniques, organized in a hierarchy, are used both in the textual and in the visual content of the meme (multimodal task). If the ancestor node of a technique is selected, only partial reward will be given. This is a hierarchical multilabel classification problem. You can find info on the hierarchy here.
+* Subtask 2b - Given a meme (both the textual and the visual content), identify whether it contains a persuasion technique (at least one of the 22 techniques we considered in this task), or no technique. This is a binary classification problem. Note that this is a simplified version of subtask 2a in which the hierarchy is cut at the first two children of the root node.
+
+__I engaged in Subtask 2a, which is multi-modal and multi-label classification__
